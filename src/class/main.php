@@ -10,10 +10,15 @@ class SukeInv {
     }
 
     public static function activate() {
-
+        /**
+         * Activation functions for the plugin. 
+         * */
     }
 
     public function create_inv_type() {
+        /**
+         * Function to Register a custom post type 'Invoice' 
+         * */
         $labels = array(
 			'name'               => 'Invoice',
 			'singular_name'      => 'Invoice',
@@ -58,7 +63,7 @@ class SukeInv {
 		 * Rewrite base
 		 */
 		$rewrite = array(
-			'slug'       => 'videos',
+			'slug'       => 'invoices',
 			'with_front' => false,
 			'feeds'      => true,
 		);
